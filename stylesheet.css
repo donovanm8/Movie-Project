@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 
+
+REUSABLE CSS + UNIVERSAL  
+
+*/
+
+#landing-page {
+    height: 25vh;
+}
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #242424;
+}
+
+.container {
+    padding: 24px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* .border {
+    margin: 0 auto;
+    width: 800px;
+    border-bottom: 1px white solid;
+} */
+
+.fa-ticket {
+    color: gold;
+    font-size: 32px;
+}
+
+.gold {
+    color: gold;
+}
+
+.header{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.hover:hover {
+    transform: scale(.9);
+}
+
+h4 {
+    text-align: center;
+}
+
+li {
+    transition: all 200ms ease;
+}
+
+nav {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 70px;
+    padding: 12px;
+}
+
+/* 
+
+NAVIGATION  
+
+*/
+
+.nav__left--container{
+    display: flex;
+    align-items: center;
+}
+
+.nav__icon--wrapper {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.nav__title {
+    font-size: 24px;
+    color: white;
+}
+
+.nav__right--container{
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    margin: 0 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 300ms ease-in;
+}
+
+.nav__link:hover{
+    color: gold;
+}
+
+.nav__link--main-anchor {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    background-color: gold;
+    color: black;
+    border-radius: 50px;
+    border: none;
+}
+
+/* 
+
+HEADER 
+
+*/
+
+.header__input-button--wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__title {
+    font-size: 32px;
+    margin: 12px 0;
+    color: white;
+}
+
+.input__container {
+    background-color: white;
+    border-radius: 12px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    width: 300px;
+    outline: none;
+    padding: 8px 42px 8px 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header__button--container{
+    position: absolute;
+    right: 12px;
+    background-color: white;
+}
+
+.header__button{
+    background-color: white;
+    border: none;
+}
+
+.fa-magnifying-glass{
+    color: #242424;
+    background-color: white;
+    font-size: 24px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+
+/* 
+
+RESULTS 
+
+*/
+
+#results {
+    width: 100%;
+    max-width: 1500px;
+    margin: 24px auto;
+}
+
+.results__title {
+    color: white;
+}
+
+.results__user-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+select {
+    border-radius: 12px;
+    padding: 6px 12px;
+    border: none;
+    font-weight: 600;
+}
+
+/* 
+
+MOVIE 
+
+*/
+
+#movies{
+    background-color: grey;
+}
+
+.movie__list--container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 12px auto;
+    padding: 32px;
+    background-color: #242424;
+    color: white;
+    border-radius: 12px;
+}
+
+.movie__image {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.movie__description--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 0;
+    overflow: hidden;
+}
+
+.movie__button{
+    background-color: gold;
+    padding: 12px 32px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.movie__anchor--button {
+    color: black;
+}

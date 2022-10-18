@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce Website</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a2d462fdca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="landing-page">
+      <nav>
+        <div class="nav__left--container">
+          <div class="nav__icon--wrapper">
+            <i class="fa-solid fa-ticket"></i>
+          </div>
+          <h1 class="nav__title">FreeMoviesUB.com</h1>
+        </div>
+        <ul class="nav__right--container">
+          <li><a class="nav__link" href="#">Home</a></li>
+          <li><a class="nav__link" href="#">Go Premium</a></li>
+          <li><a class="nav__link" href="#">Search</a></li>
+          <li class="hover">
+            <a class="nav__link--main-anchor hover" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <header class="header">
+        <h1 class="header__title">
+          Browse and watch movies. <span class="gold">Free.</span>
+        </h1>
+        <div class="header__input-button--wrapper">
+          <div class="input__container">
+            <input type="text" id="movieSearch" placeholder='Try searching "Dark Knight"' value=""/>
+          </div>
+          <div class="header__button--container">
+            <button class="header__button" onclick="renderMovies()">
+              <i class="hover fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </section>
+    <div class="border"></div>
+
+    <section id="results">
+      <div class="results__user-input">
+        <h1 class="results__title">
+          Search results for : <span class="gold">"dark knight"</span>
+        </h1>
+        <div class="results__filter">
+          <select id="filter" onchange="filterMovies(event)">
+            <option value="" selected disabled>Sort</option>
+            <option value="RECENT_TO_OLD">Sort,Most Recent to Oldest</option>
+            <option value="OLD_TO_RECENT">Sort,Oldest to Most Recent</option>
+            <option value="RATING">Rating</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section id="movies">
+      <div class="container">
+        <div class="row">
+          <div class="movie__list--container">
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
